@@ -1,0 +1,76 @@
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\roslyn\csc.exe
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\roslyn\System.Collections.Immutable.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\roslyn\System.Reflection.Metadata.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\roslyn\vbc.exe
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\roslyn\VBCSCompiler.exe
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\roslyn\VBCSCompiler.exe.config
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\WebProj.dll.config
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\WebProj.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\WebProj.pdb
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\Newtonsoft.Json.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\System.Net.Http.Formatting.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\System.Web.Http.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\System.Web.Http.WebHost.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\Newtonsoft.Json.xml
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\System.Net.Http.Formatting.xml
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\System.Web.Http.xml
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\System.Web.Http.WebHost.xml
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\obj\Debug\WebProj.csprojResolveAssemblyReference.cache
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\obj\Debug\WebProj.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\obj\Debug\WebProj.pdb
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\Autofac.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\Autofac.Integration.WebApi.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\WebProj.BLL.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\WebProj.Common.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\WebProj.DAL.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\WebProj.BLL.pdb
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\WebProj.Common.pdb
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\WebProj.DAL.pdb
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\Autofac.xml
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj\bin\Autofac.Integration.WebApi.xml
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\roslyn\csc.exe
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\roslyn\System.Collections.Immutable.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\roslyn\System.Reflection.Metadata.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\roslyn\vbc.exe
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\roslyn\VBCSCompiler.exe
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\roslyn\VBCSCompiler.exe.config
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\WebProj.dll.config
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\WebProj.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\WebProj.pdb
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\Autofac.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\Autofac.Integration.WebApi.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\Newtonsoft.Json.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\System.Net.Http.Formatting.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\System.Web.Http.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\System.Web.Http.WebHost.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\WebProj.BLL.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\WebProj.Common.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\WebProj.DAL.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\WebProj.BLL.pdb
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\WebProj.Common.pdb
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\WebProj.DAL.pdb
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\Autofac.xml
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\Autofac.Integration.WebApi.xml
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\Newtonsoft.Json.xml
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\System.Net.Http.Formatting.xml
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\System.Web.Http.xml
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\bin\System.Web.Http.WebHost.xml
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\obj\Debug\WebProj.csprojResolveAssemblyReference.cache
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\obj\Debug\WebProj.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj\obj\Debug\WebProj.pdb

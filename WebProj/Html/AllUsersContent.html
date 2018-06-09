@@ -1,0 +1,158 @@
+﻿<script src="../Scripts/awesome.js"></script>
+
+<div id="allUsers">
+	<table id="users" class="data">
+		<caption>All Users</caption>
+		<thead>
+			<tr class="data">
+				<th>First name</th>
+				<th>Last name</th>
+				<th>Role</th>
+			</tr>
+		</thead>
+		<tbody id="usersBody" />
+	</table>
+</div>
+
+<div id="userDetail" style="visibility:collapse">
+
+	<button id="hideDetalis" onclick="$('#userDetail').css('visibility', 'collapse')">Hide details</button>
+
+	<table id="profile">
+		<Caption>User details</Caption>
+		<tr>
+			<td>Username:</td>
+			<td><input type="text" size="16" id="userUp" /></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="text" size="16" id="passUp"></td>
+		</tr>
+		<tr>
+			<td>First name:</td>
+			<td><input type="text" size="16" id="firstNameUp"></td>
+		</tr>
+		<tr>
+			<td>Last name:</td>
+			<td><input type="text" size="16" id="lastNameUp"></td>
+		</tr>
+		<tr>
+			<td>Gender:</td>
+			<td>
+				<select id="genderUp"></select>
+			</td>
+		</tr>
+		<tr>
+			<td>JMBG:</td>
+			<td><input type="text" size="16" id="jmbgUp"></td>
+		</tr>
+		<tr>
+			<td>Phone number:</td>
+			<td><input type="text" size="16" id="phoneNumberUp"></td>
+		</tr>
+		<tr>
+			<td>Email Address:</td>
+			<td><input type="text" size="16" id="emailAddressUp"></td>
+		</tr>
+		<tr>
+			<td>Block user:</td>
+			<td><input type="checkbox" id="blocked"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="button" id="updateUserButton" value="Update" onclick="updateUser();" />
+			</td>
+		</tr>
+	</table>
+</div>
+
+<button id="showHideButton">Show register driver pane</button>
+
+<div id="createPane" style="visibility:collapse">
+	<table>
+		<caption>Register driver</caption>
+		<tr>
+			<td>Username:</td>
+			<td><input type="text" size="16" id="user"></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="password" size="16" id="pass"></td>
+		</tr>
+		<tr>
+			<td>First name:</td>
+			<td><input type="text" size="16" id="firstName"></td>
+		</tr>
+		<tr>
+			<td>Last name:</td>
+			<td><input type="text" size="16" id="lastName"></td>
+		</tr>
+		<tr>
+			<td>Gender:</td>
+			<td>
+				<select id="gender"></select>
+			</td>
+		</tr>
+		<tr>
+			<td>JMBG:</td>
+			<td><input type="text" size="16" id="jmbg"></td>
+		</tr>
+		<tr>
+			<td>Phone number:</td>
+			<td><input type="text" size="16" id="phoneNumber"></td>
+		</tr>
+		<tr>
+			<td>Email Address:</td>
+			<td><input type="text" size="16" id="emailAddress"></td>
+		</tr>
+		<tr>
+			<td>Vehicle:</td>
+			<td>
+				<table id="vehicle">
+					<tr>
+						<td>Yead of production:</td>
+						<td><input type="text" size="16" id="vehYoP"></td>
+					</tr>
+					<tr>
+						<td>Licence plate number:</td>
+						<td><input type="text" size="16" id="vehPlate"></td>
+					</tr>
+					<tr>
+						<td>Taxi identifier:</td>
+						<td><input type="text" size="16" id="vehIdentifier"></td>
+					</tr>
+					<tr>
+						<td>Vehicle type:</td>
+						<td><select id="vehType" /></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="button" value="Register" onclick="RegisterDriver();" />
+			</td>
+		</tr>
+	</table>
+</div>
+<script>
+	$(document).ready(function () {
+		getGenders('#gender');
+		getVehicleTypes('#vehType');
+	});
+
+	$('#showHideButton').click(function () {
+		if ($('#createPane').css('visibility') == 'collapse') {
+			$('#createPane').css('visibility', 'visible');
+			$('#showHideButton').html('Hide register driver pane');
+		}
+		else {
+			$('#createPane').css('visibility', 'collapse');
+			$('#showHideButton').html('Show register driver pane');
+		}
+	});
+
+	//$('#hideDetalis').click(function () {
+	//	$('#userDetail').css('visibility', 'collapse');
+	//});
+</script>

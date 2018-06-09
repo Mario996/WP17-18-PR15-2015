@@ -1,0 +1,59 @@
+﻿<div id="fareDetail" style="visibility:collapse">
+	<table id="fare">
+		<caption>Fare Details</caption>
+		<tr>
+			<td>Date and time of fare:</td>
+			<td>
+				<input type="datetime-local" id="fareDetailDate" readonly />
+			</td>
+		</tr>
+		<tr id="readOnlyfareStartLocation">
+			<td>Start location:</td>
+			<td>
+				<input type="text" id="fareStartLocation" readonly />
+			</td>
+		</tr>
+		<tr id="dispatcherFareVehicle">
+			<td>Vehicle type:</td>
+			<td><input type="text" size="16" id="fareVehicle" readonly></td>
+		</tr>
+		<tr id="customerColumn">
+			<td>Customer:</td>
+			<td>
+				<input type="text" id="fareCustomer" readonly/>
+			</td>
+		</tr>
+		<tr id="dispatcherColumn">
+			<td>Dispatcher:</td>
+			<td>
+				<input type="text" id="fareDispatcher" />
+			</td>
+		</tr>
+		<tr id="hasDriverColumn">
+			<td>Driver:</td>
+			<td>
+				<input type="text" id="fareDriver" />
+			</td>
+		</tr>
+		<tr id="choseDriverColumn" style="visibility:collapse">
+			<td>Driver:</td>
+			<td>
+				<select id="fareDriverSelect">
+					<option value="0">N/A</option>
+				</select>
+			</td>
+		</tr>
+		<tr id="statusColumn">
+			<td>Status:</td>
+			<td>
+				<select id="fareStatus"></select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="button" value="Update fare" id="updateFareButton" />
+			</td>
+		</tr>
+	</table>
+</div>
+

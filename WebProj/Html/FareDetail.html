@@ -1,0 +1,172 @@
+﻿<div id="fareDetail" style="visibility:collapse">
+	<table id="fare">
+		<caption>Fare Details</caption>
+		<tr>
+			<td>Date and time of fare:</td>
+			<td>
+				<input type="datetime-local" id="fareDetailDate" />
+			</td>
+		</tr>
+		<tr id="readOnlyfareStartLocation" style="visibility:collapse">
+			<td>Start location:</td>
+			<td>
+				<input type="text" id="fareStartLocation" readonly/>
+			</td>
+		</tr>
+		<tr id="editablefareStartLocation">
+			<td>Start location:</td>
+			<td>
+				<div>
+					<p>Location</p>
+					<table>
+						<tr>
+							<td>X:</td>
+							<td><input type="text" size="16" id="startlocX"></td>
+						</tr>
+						<tr>
+							<td>Y:</td>
+							<td><input type="text" size="16" id="startlocY"></td>
+						</tr>
+					</table>
+					<p>
+						Address
+					</p>
+					<table id="address">
+						<tr>
+							<td>Street:</td>
+							<td><input type="text" size="16" id="startaddrStreet"></td>
+						</tr>
+						<tr>
+							<td>Street number:</td>
+							<td><input type="text" size="16" id="startaddrNumber"></td>
+						</tr>
+						<tr>
+							<td>City:</td>
+							<td><input type="text" size="16" id="startaddrCity"></td>
+						</tr>
+						<tr>
+							<td>Postal code:</td>
+							<td><input type="text" size="16" id="startaddrPostalCode"></td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+		<tr id="customerFinishlocation">
+			<td>Finish location:</td>
+			<td>
+				<input type="text" id="fareFinishLocation" />
+			</td>
+		</tr>
+		<tr id="driverFinishlocation">
+			<td>Finish location:</td>
+			<td>
+				<div>
+					<p>Location</p>
+					<table>
+						<tr>
+							<td>X:</td>
+							<td><input type="text" size="16" id="locX"></td>
+						</tr>
+						<tr>
+							<td>Y:</td>
+							<td><input type="text" size="16" id="locY"></td>
+						</tr>
+					</table>
+					<p>
+						Address
+					</p>
+					<table id="address">
+						<tr>
+							<td>Street:</td>
+							<td><input type="text" size="16" id="addrStreet"></td>
+						</tr>
+						<tr>
+							<td>Street number:</td>
+							<td><input type="text" size="16" id="addrNumber"></td>
+						</tr>
+						<tr>
+							<td>City:</td>
+							<td><input type="text" size="16" id="addrCity"></td>
+						</tr>
+						<tr>
+							<td>Postal code:</td>
+							<td><input type="text" size="16" id="addrPostalCode"></td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+		<tr id="driverFareVehicle">
+			<td>Vehicle type:</td>
+			<td><input type="text" size="16" id="fareVehicle"></td>
+		</tr>
+		<tr id="customerFareVehicle">
+			<td>Vehicle type:</td>
+			<td>
+				<select id="fareVehicle">
+					<option value="0">--choose--</option>
+				</select>
+			</td>
+		</tr>
+		<tr id="customerColumn">
+			<td>Customer:</td>
+			<td>
+				<input type="text" id="fareCustomer" />
+			</td>
+		</tr>
+		<tr id="dispatcherColumn">
+			<td>Dispatcher:</td>
+			<td>
+				<input type="text" id="fareDispatcher" />
+			</td>
+		</tr>
+		<tr id="hasDriverColumn">
+			<td>Driver:</td>
+			<td>
+				<input type="text" id="fareDriver" />
+			</td>
+		</tr>
+		<tr id="choseDriverColumn">
+			<td>Driver:</td>
+			<td>
+				<select id="fareDriverSelect"></select>
+			</td>
+		</tr>
+		<tr id="statusColumn">
+			<td>Status:</td>
+			<td>
+				<select id="fareStatus"></select>
+			</td>
+		</tr>
+		<tr id="priceColumn">
+			<td>Price:</td>
+			<td>
+				<input type="text" id="farePrice" />
+			</td>
+		</tr>
+		<tr id="fareCommentColumn">
+			<td>Comment:</td>
+			<td>
+				<textarea type="text" id="fareComment" />
+			</td>
+		</tr>
+		<tr id="fareRatingColumn">
+			<td>Rate:</td>
+			<td>
+				<form action="" id="fareRating">
+					5<input type="radio" name="gender" value="5" style="margin-right:auto">
+					4<input type="radio" name="gender" value="4" style="margin-right:auto">
+					3<input type="radio" name="gender" value="3" style="margin-right:auto">
+					2<input type="radio" name="gender" value="2" style="margin-right:auto">
+					1<input type="radio" name="gender" value="1" style="margin-right:auto">
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="button" value="Update fare" id="updateFareButton" />
+			</td>
+		</tr>
+	</table>
+</div>

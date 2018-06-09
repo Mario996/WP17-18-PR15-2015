@@ -1,0 +1,52 @@
+﻿<table class="noborder">
+	<tr class="noborder">
+		<th colspan="2" align="center"><big>Register User</big></th>
+	</tr>
+	<tr>
+		<td>Username:</td>
+		<td><input type="text" size="16" id="user"></td>
+	</tr>
+	<tr>
+		<td>Password:</td>
+		<td><input type="password" size="16" id="pass"></td>
+	</tr>
+	<tr>
+		<td>First name:</td>
+		<td><input type="text" size="16" id="firstName"></td>
+	</tr>
+	<tr>
+		<td>Last name:</td>
+		<td><input type="text" size="16" id="lastName"></td>
+	</tr>
+	<tr>
+		<td>Gender:</td>
+		<td>
+			<select id="registerGender"></select>
+		</td>
+	</tr>
+	<tr>
+		<td>JMBG:</td>
+		<td><input type="text" size="16" id="jmbg"></td>
+	</tr>
+	<tr>
+		<td>Phone number:</td>
+		<td><input type="text" size="16" id="phoneNumber"></td>
+	</tr>
+	<tr>
+		<td>Email Address:</td>
+		<td><input type="text" size="16" id="emailAddress"></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+			<input type="button" value="Register" onclick="Register();" />
+		</td>
+	</tr>
+</table>
+
+<script src="../Scripts/awesome.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+<script>
+	$(document).ready(function () {
+		getGenders('#registerGender');
+	});
+</script>

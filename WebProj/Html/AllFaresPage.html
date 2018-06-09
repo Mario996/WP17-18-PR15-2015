@@ -1,0 +1,200 @@
+﻿<script src="../Scripts/awesome.js"></script>
+
+<div id="allFares" style="visibility:collapse">
+	<table id="fares" class="data">
+		<caption>All Fares</caption>
+		<thead>
+			<tr class="data">
+				<th class="data">Customer</th>
+				<th class="data">Start Location</th>
+				<th class="data">Date of fare</th>
+				<th class="data">Dispatcher</th>
+			</tr>
+		</thead>
+		<tbody id="faresBody"/>
+	</table>
+</div>
+
+<div id="dispatcherFares">
+	<table id="dfares" class="data">
+		<caption>Dispatcher Fares</caption>
+		<thead>
+			<tr class="data">
+				<th class="data">Customer</th>
+				<th class="data">Start Location</th>
+				<th class="data">Date of fare</th>
+				<th class="data">Dispatcher</th>
+			</tr>
+		</thead>
+		<tbody id="dfaresBody" />
+	</table>
+</div>
+
+<div id="fareContent" />
+
+<button id="showHideFareButton">Show create fare pane</button>
+
+<div id="createPane" style="visibility:collapse">
+	<h2>Create fare</h2>
+	<table>
+		<tr>
+			<td>Date and time of fare:</td>
+			<td>
+				<input type="datetime-local" id="fareDate" />
+			</td>
+		</tr>
+		<tr>
+			<td>Start location:</td>
+			<td>
+				<div>
+					<p>Location</p>
+					<table>
+						<tr>
+							<td>X:</td>
+							<td><input type="text" size="16" id="dlocX"></td>
+						</tr>
+						<tr>
+							<td>Y:</td>
+							<td><input type="text" size="16" id="dlocY"></td>
+						</tr>
+					</table>
+					<p>
+						Address
+					</p>
+					<table id="address">
+						<tr>
+							<td>Street:</td>
+							<td><input type="text" size="16" id="daddrStreet"></td>
+						</tr>
+						<tr>
+							<td>Street number:</td>
+							<td><input type="text" size="16" id="daddrNumber"></td>
+						</tr>
+						<tr>
+							<td>City:</td>
+							<td><input type="text" size="16" id="daddrCity"></td>
+						</tr>
+						<tr>
+							<td>Postal code:</td>
+							<td><input type="text" size="16" id="daddrPostalCode"></td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<tr>
+						<td>Driver:</td>
+						<td>
+							<select id="fareCreateDriver">
+								<option value="0">N/A</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Vehicle type:</td>
+						<td>
+							<select id="fareCreateVehicle">
+								<option value="0">--choose--</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="button" id="createButton" value="Create fare" />
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+<script>
+	$(document).ready(function () {
+		$('#fareContent').load("../Html/DispatcherFareDetail.html");
+		$('#fareStatus').empty();
+		$('#fareCreateDriver').empty();
+		$('#fareCreateVehicle').empty();
+		getFareStatuses('#fareStatus');
+		getFreeVehicleDrivers('#fareCreateDriver');
+		getVehicleTypes('#fareCreateVehicle');
+		getDispatcherFares();
+
+		$('#createButton').click(function () {
+			var locX = {
+				text : $('#dlocX').val(),
+				id: 'X'
+			};
+			var locY = {
+				text: $('#dlocY').val(),
+				id: 'Y'
+			};
+			var addrStreet = {
+				text: $('#daddrStreet').val(),
+				id: 'Street'
+			};
+			var addrNumber = {
+				text: $('#daddrNumber').val(),
+				id: 'Street number'
+			}
+			var addrCity = {
+				text: $('#daddrCity').val(),
+				id: 'City'
+			}
+			var addrPostalCode = {
+				text: $('#daddrPostalCode').val(),
+				id: 'Postal code'
+			}
+			var inputVal = new Array(locX, locY, addrStreet, addrNumber, addrCity, addrPostalCode);
+			var message = "Field(s)";
+			var isError = false;
+			inputVal.forEach(function (item) {
+				if (item.text == null || item.text == '') {
+					isError = true;
+					message += ' ' + item.id + ',';
+				}
+			});
+			var str = "";
+			$("#fareCreateDriver option:selected").each(function () {
+				str = $(this).text();
+				if (str == 'N/A') {
+					message += ' Driver '
+				}
+			});
+			message += 'must be set';
+			if (isError) {
+				alert(message);
+			} else {
+				createDispatcherFare();
+			}
+		});
+
+		$("#fareStatus option:selected").each(function () {
+			str = $(this).text();
+			if (str == 'CANCELED' || str=='FAILED' || str=='SUCCESFULL') {
+				$('#updateFareButton').css('visibility', 'collapse');
+				$('#fareStatus').attr('disabled', true);
+			}
+			if (str == 'ON_HOLD') {
+				$('#updateFareButton').css('visibility', 'visible');
+				$('#fareStatus').attr('disabled', false);
+			}
+		});
+
+	});
+	$('#showHideFareButton').click(function () {
+		if ($('#createPane').css('visibility') == 'collapse') {
+			$('#createPane').css('visibility', 'visible');
+			$('#showHideFareButton').html('Hide create fare pane');
+		}
+		else {
+			$('#createPane').css('visibility', 'collapse');
+			$('#showHideFareButton').html('Show create fare pane');
+		}
+	});
+
+</script>

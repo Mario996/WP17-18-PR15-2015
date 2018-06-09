@@ -1,0 +1,9 @@
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.Common\obj\Debug\WebProj.Common.csprojResolveAssemblyReference.cache
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.Common\bin\Debug\WebProj.Common.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.Common\bin\Debug\WebProj.Common.pdb
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.Common\obj\Debug\WebProj.Common.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.Common\obj\Debug\WebProj.Common.pdb
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.Common\bin\Debug\WebProj.Common.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.Common\bin\Debug\WebProj.Common.pdb
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.Common\obj\Debug\WebProj.Common.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.Common\obj\Debug\WebProj.Common.pdb

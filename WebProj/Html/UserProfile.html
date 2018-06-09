@@ -1,0 +1,131 @@
+﻿<div>
+	<h2>User profile</h2>
+	<table id="profile">
+		<tr>
+			<td>Username:</td>
+			<td><input type="text" size="16" id="userUp" readonly></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="text" size="16" id="passUp"></td>
+		</tr>
+		<tr>
+			<td>First name:</td>
+			<td><input type="text" size="16" id="firstNameUp"></td>
+		</tr>
+		<tr>
+			<td>Last name:</td>
+			<td><input type="text" size="16" id="lastNameUp"></td>
+		</tr>
+		<tr>
+			<td>Gender:</td>
+			<td>
+				<select id="genderUp"></select>
+			</td>
+		</tr>
+		<tr>
+			<td>JMBG:</td>
+			<td><input type="text" size="16" id="jmbgUp"></td>
+		</tr>
+		<tr>
+			<td>Phone number:</td>
+			<td><input type="text" size="16" id="phoneNumberUp"></td>
+		</tr>
+		<tr>
+			<td>Email Address:</td>
+			<td><input type="text" size="16" id="emailAddressUp"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="button" value="Update Profile" onclick="update();" />
+			</td>
+		</tr>
+	</table>
+</div>
+<div  id="location" style="visibility:collapse">
+	<h2>Location</h2>
+	<table>
+		<tr>
+			<td>X:</td>
+			<td><input type="text" size="16" id="locX" ></td>
+		</tr>
+		<tr>
+			<td>Y:</td>
+			<td><input type="text" size="16" id="locY"></td>
+		</tr>
+	</table>
+	<h2>Address</h2>
+	<table id="address">
+		<tr>
+			<td>Street:</td>
+			<td><input type="text" size="16" id="addrStreet" ></td>
+		</tr>
+		<tr>
+			<td>Street number:</td>
+			<td><input type="text" size="16" id="addrNumber"></td>
+		</tr>
+		<tr>
+			<td>City:</td>
+			<td><input type="text" size="16" id="addrCity"></td>
+		</tr>
+		<tr>
+			<td>Postal code:</td>
+			<td><input type="text" size="16" id="addrPostalCode" ></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="button" id="updateButton" value="Update Location" />
+			</td>
+		</tr>
+	</table>
+</div>
+<script src="../Scripts/awesome.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+<script>
+	$(document).ready(function () {
+		getGenders('#genderUp');
+		getUserData();
+
+		$('#updateButton').click(function () {
+			var locX = {
+				text : $('#locX').val(),
+				id: 'X'
+			};
+			var locY = {
+				text: $('#locY').val(),
+				id: 'Y'
+			};
+			var addrStreet = {
+				text: $('#addrStreet').val(),
+				id: 'Street'
+			};
+			var addrNumber = {
+				text: $('#addrNumber').val(),
+				id: 'Street number'
+			}
+			var addrCity = {
+				text: $('#addrCity').val(),
+				id: 'City'
+			}
+			var addrPostalCode = {
+				text: $('#addrPostalCode').val(),
+				id: 'Postal code'
+			}
+			var inputVal = new Array(locX, locY, addrStreet, addrNumber, addrCity, addrPostalCode);
+			var message = "Field(s)";
+			var isError = false;
+			inputVal.forEach(function (item) {
+				if (item.text == null || item.text == '') {
+					isError = true;
+					message += ' ' + item.id + ',';
+				}
+			});
+			message += 'must be set';
+			if (isError) {
+				alert(message);
+			} else {
+				updateLocation();
+			}
+		});
+	});
+</script>

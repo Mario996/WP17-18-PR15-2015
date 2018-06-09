@@ -1,0 +1,14 @@
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.DAL\obj\Debug\WebProj.DAL.csprojResolveAssemblyReference.cache
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.DAL\bin\Debug\WebProj.DAL.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.DAL\bin\Debug\WebProj.DAL.pdb
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.DAL\bin\Debug\WebProj.Common.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.DAL\bin\Debug\WebProj.Common.pdb
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.DAL\obj\Debug\WebProj.DAL.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.DAL\obj\Debug\WebProj.DAL.pdb
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.DAL\bin\Debug\WebProj.DAL.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.DAL\bin\Debug\WebProj.DAL.pdb
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.DAL\bin\Debug\WebProj.Common.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.DAL\bin\Debug\WebProj.Common.pdb
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.DAL\obj\Debug\WebProj.DAL.csprojResolveAssemblyReference.cache
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.DAL\obj\Debug\WebProj.DAL.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.DAL\obj\Debug\WebProj.DAL.pdb

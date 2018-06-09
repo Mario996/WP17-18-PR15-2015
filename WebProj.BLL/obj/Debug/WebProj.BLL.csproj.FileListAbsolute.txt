@@ -1,0 +1,18 @@
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.BLL\bin\Debug\WebProj.BLL.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.BLL\bin\Debug\WebProj.BLL.pdb
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.BLL\bin\Debug\WebProj.Common.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.BLL\bin\Debug\WebProj.DAL.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.BLL\bin\Debug\WebProj.Common.pdb
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.BLL\bin\Debug\WebProj.DAL.pdb
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.BLL\obj\Debug\WebProj.BLL.csprojResolveAssemblyReference.cache
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.BLL\obj\Debug\WebProj.BLL.dll
+E:\Gospodin Projekat\Mario Klisanic\WebMarioKlisanic\WebProj.BLL\obj\Debug\WebProj.BLL.pdb
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.BLL\bin\Debug\WebProj.BLL.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.BLL\bin\Debug\WebProj.BLL.pdb
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.BLL\bin\Debug\WebProj.Common.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.BLL\bin\Debug\WebProj.DAL.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.BLL\bin\Debug\WebProj.Common.pdb
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.BLL\bin\Debug\WebProj.DAL.pdb
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.BLL\obj\Debug\WebProj.BLL.csprojResolveAssemblyReference.cache
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.BLL\obj\Debug\WebProj.BLL.dll
+E:\Gospodin Projekat\WebRepo\WebMarioKlisanic\WebProj.BLL\obj\Debug\WebProj.BLL.pdb

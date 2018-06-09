@@ -1,0 +1,166 @@
+﻿<div id="title">
+
+	<br>
+	<br>
+	<ul>
+		<li class="index">Filter by status:</li>
+		<li class="index">
+			<select id="filterStatus"></select>
+		</li>
+		<li class="index"><button id="filterButton">Filter</button></li>
+		<li class="index"><button id="clearFilterButton">Clear fiter</button></li>
+	</ul>
+	<br>
+	<br>
+
+	<div id="customerFares"/>
+	<div id="fareContent" />
+	<button id="showHideCustomerButton">Show create fare pane</button>
+
+
+	<div id="createPane" style="visibility:collapse">
+		<h2>Create fare</h2>
+		<table id="customerCreateFareTable" >
+			<tr>
+				<td >Date and time of fare:</td>
+				<td >
+					<input type="datetime-local" id="fareDate" />
+				</td>
+			</tr>
+			<tr>
+				<td >Start location:</td>
+				<td >
+					<div>
+						<p>Location</p>
+						<table>
+							<tr>
+								<td >X:</td>
+								<td ><input type="text" size="16" id="locX"></td>
+							</tr>
+							<tr>
+								<td >Y:</td>
+								<td ><input type="text" size="16" id="locY"></td>
+							</tr>
+						</table>
+						<p>
+							Address
+						</p>
+						<table id="address">
+							<tr>
+								<td >Street:</td>
+								<td ><input type="text" size="16" id="addrStreet"></td>
+							</tr>
+							<tr>
+								<td >Street number:</td>
+								<td ><input type="text" size="16" id="addrNumber"></td>
+							</tr>
+							<tr>
+								<td >City:</td>
+								<td ><input type="text" size="16" id="addrCity"></td>
+							</tr>
+							<tr>
+								<td >Postal code:</td>
+								<td ><input type="text" size="16" id="addrPostalCode"></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td >Vehicle type:</td>
+				<td >
+					<select id="customerVehType">
+						<option value="0">--choose--</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td  colspan="2" align="center">
+					<input type="button" id="createButton" value="Create fare"/>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<script>
+	$('#customerFares').load('../Html/FareTable.html');
+	$(document).ready(function () {
+		getVehicleTypes('#customerVehType');
+		getCustomerFares();
+		getFareStatuses('#fareStatus', true);
+
+		$('#filterButton').click(function () {
+			fileterCustomerFares();
+		});
+
+		$('#clearFilterButton').click(function () {
+			getCustomerFares();
+		});
+	});
+
+	$('#showHideCustomerButton').click(function () {
+		if ($('#createPane').css('visibility') == 'collapse') {
+			$('#createPane').css('visibility', 'visible');
+			$('#showHideCustomerButton').html('Hide create fare pane');
+		}
+		else {
+			$('#createPane').css('visibility', 'collapse');
+			$('#showHideCustomerButton').html('Show create fare pane');
+		}
+	});
+
+	
+
+	
+
+	$('#createButton').click(function () {
+		var locX = {
+			text : $('#locX').val(),
+			id: 'X'
+		};
+		var locY = {
+			text: $('#locY').val(),
+			id: 'Y'
+		};
+		var addrStreet = {
+			text: $('#addrStreet').val(),
+			id: 'Street'
+		};
+		var addrNumber = {
+			text: $('#addrNumber').val(),
+			id: 'Street number'
+		}
+		var addrCity = {
+			text: $('#addrCity').val(),
+			id: 'City'
+		}
+		var addrPostalCode = {
+			text: $('#addrPostalCode').val(),
+			id: 'Postal code'
+		}
+		var fareDate = {
+			text: $('#fareDate').val(),
+			id: 'Fare date'
+		}
+
+		var inputVal = new Array(locX, locY, addrStreet, addrNumber, addrCity, addrPostalCode, fareDate);
+		var message = "Field(s)";
+		var isError = false;
+		inputVal.forEach(function (item) {
+			if (item.text == null || item.text == '') {
+				isError = true;
+				message += ' ' + item.id + ',';
+			}
+		});
+		
+		message += 'must be set';
+		if (isError) {
+			alert(message);
+		} else {
+			createFare();
+		}
+	});
+
+</script>
+

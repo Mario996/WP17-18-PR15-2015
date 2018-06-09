@@ -1,0 +1,64 @@
+﻿<div id="title">
+	<div id="unassignedFares">
+		<table class="data">
+			<caption>Unassigned Fares</caption>
+			<thead>
+				<tr class="data">
+					<th id="dateColumn">Date of fare</th>
+					<th id="startColumn">Start Location</th>
+					<th id="vehicleColumn">Desired Vehicle Type</th>
+					<th id="customerColumn">Customer</th>
+					<th id="startColumn">Finish Location</th>
+					<th id="dispatherColumn">Dispather</th>
+					<th id="driverColumn">Driver</th>
+					<th id="statusColumn">Price</th>
+					<th id="statusColumn">Status</th>
+					<th class="data">Take</th>
+				</tr>
+			</thead>
+			<tbody id="unassignedFaresBody" />
+		</table>
+	</div>
+
+	<br>
+	<br>
+	<ul>
+		<li class="index">Filter by status:</li>
+		<li class="index">
+			<select id="filterStatus"></select>
+		</li>
+		<li class="index"><button id="filterButton">Filter</button></li>
+		<li class="index"><button id="clearFilterButton">Clear fiter</button></li>
+	</ul>
+	<br>
+	<br>
+	<br>
+
+
+	<div id="driverFares">
+	</div>
+</div>
+
+<div id="fareContent" />
+
+<script>
+	
+	$(document).ready(function () {
+		$('#driverFares').load('../Html/FareTable.html');
+		getDriverFares();
+		getUnassignedFares();
+		getFareStatuses('#fareStatus', false);
+		$('#filterButton').click(function () {
+			fileterDriverFares();
+		});
+
+		$('#clearFilterButton').click(function () {
+			getDriverFares();
+		});
+
+	});
+
+	
+
+</script>
+

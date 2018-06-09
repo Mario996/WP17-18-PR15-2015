@@ -1,0 +1,58 @@
+﻿body {
+	background-color: #DFFFFF;
+	 color: blue;
+}
+h1 {
+    color: green;
+}
+
+button {
+    background-color: #D3D3D3;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+table.data, th.data, td.data {
+	border: 1px solid black;
+	padding: 1px;
+}
+
+
+table.data {
+	border-collapse: collapse;
+}
+
+.data tr {
+	background-color: #eee;
+	border-top: 1px solid #fff;
+}
+
+	.data tr:hover {
+		background-color: #ccc;
+	}
+
+.data th {
+	background-color: #fff;
+	border-top: 1px solid #fff;
+}
+
+.data th, .data td {
+	padding: 3px 5px;
+	border: 1px solid #fff;
+}
+
+	.data td:hover {
+		cursor: pointer;
+	}
+
+li.index {
+	display: inline;
+}

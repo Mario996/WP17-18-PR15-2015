@@ -1,0 +1,141 @@
+﻿<div id="fareDetail" style="visibility:collapse">
+	<form>
+		<table id="fare">
+			<caption>Fare Details</caption>
+			<tr>
+				<td>Date and time of fare:</td>
+				<td>
+					<input type="datetime-local" id="fareDetailDate" readonly />
+				</td>
+			</tr>
+			<tr id="readOnlyfareStartLocation">
+				<td>Start location:</td>
+				<td>
+					<input type="text" id="fareStartLocation" readonly />
+				</td>
+			</tr>
+			<tr id="readOnlyfareFinishLocation" style="visibility:collapse">
+				<td>Finish location:</td>
+				<td>
+					<input type="text" id="fareFinishLocation" readonly />
+				</td>
+			</tr>
+			<tr id="driverFinishlocation" style="visibility:collapse">
+				<td>Finish location:</td>
+				<td>
+					<div>
+						<p>Location</p>
+						<table>
+							<tr>
+								<td>X:</td>
+								<td><input type="text" size="16" id="locX"></td>
+							</tr>
+							<tr>
+								<td>Y:</td>
+								<td><input type="text" size="16" id="locY"></td>
+							</tr>
+						</table>
+						<p>
+							Address
+						</p>
+						<table id="address">
+							<tr>
+								<td>Street:</td>
+								<td><input type="text" size="16" id="addrStreet"></td>
+							</tr>
+							<tr>
+								<td>Street number:</td>
+								<td><input type="text" size="16" id="addrNumber"></td>
+							</tr>
+							<tr>
+								<td>City:</td>
+								<td><input type="text" size="16" id="addrCity"></td>
+							</tr>
+							<tr>
+								<td>Postal code:</td>
+								<td><input type="text" size="16" id="addrPostalCode"></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			<tr id="dispatcherFareVehicle">
+				<td>Vehicle type:</td>
+				<td><input type="text" size="16" id="fareVehicle" readonly></td>
+			</tr>
+			<tr id="customerColumn">
+				<td>Customer:</td>
+				<td>
+					<input type="text" id="fareCustomer" readonly />
+				</td>
+			</tr>
+			<tr id="dispatcherColumn">
+				<td>Dispatcher:</td>
+				<td>
+					<input type="text" id="fareDispatcher" />
+				</td>
+			</tr>
+			<tr id="hasDriverColumn">
+				<td>Driver:</td>
+				<td>
+					<input type="text" id="fareDriver" />
+				</td>
+			</tr>
+			<tr id="choseDriverColumn" style="visibility:collapse">
+				<td>Driver:</td>
+				<td>
+					<select id="fareDriverSelect">
+						<option value="0">N/A</option>
+					</select>
+				</td>
+			</tr>
+			<tr id="statusColumn">
+				<td>Status:</td>
+				<td>
+					<select id="fareStatus"></select>
+				</td>
+			</tr>
+			<tr id="priceColumn" style="visibility:collapse">
+				<td>Price:</td>
+				<td>
+					<input type="text" id="farePrice" />
+				</td>
+			</tr>
+			<tr id="fareCommentColumn" style="visibility:collapse">
+				<td>Comment:</td>
+				<td>
+					<textarea type="text" id="fareComment" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" value="Update fare" id="updateFareButton" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+<script>
+	$("#fareStatus")
+  .change(function () {
+  	var str = "";
+  	$("#fareStatus option:selected").each(function () {
+  		str = $(this).text();
+  		if (str == 'SUCCESFUL') {
+  			$('#priceColumn').css('visibility', 'visible');
+  			$('#driverFinishlocation').css('visibility', 'visible');
+  		} else if (str == 'FAILED') {
+  			$('#fareCommentColumn').css('visibility', 'visible');
+  			$('#priceColumn').css('visibility', 'collapse');
+  			$('#driverFinishlocation').css('visibility', 'collapse');
+  		}
+  		else {
+  			$('#priceColumn').css('visibility', 'collapse');
+  			$('#driverFinishlocation').css('visibility', 'collapse');
+  		}
+  	});
+  })
+  .change();
+
+</script>

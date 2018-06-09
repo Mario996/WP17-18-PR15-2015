@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="../Scripts/styles.css">
+</head>
+<body>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+	<script src="../Scripts/awesome.js"></script>
+	<script src="../Scripts/jquery.sortElements.js"></script>
+
+	<div>
+		<h1>Taxi fare service</h1>
+		<ul>
+			<li class="index"><button id="homeButton" onclick="home()">Home</button></li>
+			<li class="index"><button id="loginButton">Login</button></li>
+			<li class="index"><button id="registerButton" onclick="registerUser('#content')">Register</button></li>
+			<li class="index"><button id="logoutButton" onclick="logout()">Logout</button></li>
+			<li class="index"><button id="profileButton"></button></li>
+			
+		</ul>
+		<div id="content" />
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			$("#loginButton").click(function () {
+				$('#content').load('../Html/Login.html');
+			});
+			$("#profileButton").click(function () {
+				$('#content').load('../Html/UserProfile.html');
+			});
+			$("#logoutButton").css('visibility', 'collapse');
+			$("#profileButton").css('visibility', 'collapse');
+		});
+	</script>
+
+</body>
+</html>
